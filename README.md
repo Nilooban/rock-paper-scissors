@@ -5,7 +5,6 @@ This is a web-based implementation of the classic rock-paper-scissors game, desi
 Live Demo 👉 [Rock-Paper-Scissors Game](https://rock-paper-scissors-nilooban.vercel.app/) 
 
 
-Thanks for visiting!
 
 ## How to Play
 
@@ -15,17 +14,26 @@ Thanks for visiting!
 4. The game will display the winner.
 5. You can choose to play again by clicking the "Play Again" button.
 
+
+
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
 
+
+
 ## Resources
 
 This project was created using the Frontend Mentor design, which can be found [here](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). 
 
 
+
 ## License
 
 This project is licensed under the MIT License.
+
+
+
+Thanks for visiting!
