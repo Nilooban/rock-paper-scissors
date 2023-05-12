@@ -2,6 +2,11 @@
 
 This is a web-based implementation of the classic rock-paper-scissors game, designed for desktop devices. This project was created as part of a JavaScript learning experience.
 
+Live Demo 👉 [Rock-Paper-Scissors Game](https://rock-paper-scissors-nilooban.vercel.app/) 
+
+
+Thanks for visiting!
+
 ## How to Play
 
 1. Open the game in your web browser.
