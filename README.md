@@ -1,8 +1,3 @@
-# rock-paper-scissors
-The rock-paper-scissors game was created as part of a JavaScript learning experience.
-
-
-
 # Rock-Paper-Scissors Game
 
 This is a web-based implementation of the classic rock-paper-scissors game, designed for desktop devices. This project was created as part of a JavaScript learning experience.
