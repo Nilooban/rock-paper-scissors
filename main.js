@@ -28,38 +28,67 @@ const pickHouseHand = (hand) => {
 const referee = (userHand, cpHand) => {
   if (userHand == "paper" && cpHand == "scissors") {
     setDecision("YOU LOSE!");
+    document.querySelector(".househand .handImage").classList.add("winner");
     setScore(score - 1);
+    setTimeout(() => {
+      document.querySelector(".househand .handImage").classList.remove("winner");
+    }, 2000);
   }
   if (userHand == "paper" && cpHand == "rock") {
     setDecision("YOU WIN!");
+    document.querySelector(".userhand .handImage").classList.add("winner");
     setScore(score + 1);
+    setTimeout(() => {
+      document.querySelector(".userhand .handImage").classList.remove("winner");
+    }, 2000);
   }
   if (userHand == "paper" && cpHand == "paper") {
     setDecision("It's a tie!");
+    document.querySelector(".handImage").classList.remove("winner");
   }
   if (userHand == "rock" && cpHand == "scissors") {
     setDecision("YOU WIN!");
+    document.querySelector(".userhand .handImage").classList.add("winner");
     setScore(score + 1);
+    setTimeout(() => {
+      document.querySelector(".userhand .handImage").classList.remove("winner");
+    }, 2000);
   }
   if (userHand == "rock" && cpHand == "paper") {
     setDecision("YOU LOSE!");
+    document.querySelector(".househand .handImage").classList.add("winner");
     setScore(score - 1);
+    setTimeout(() => {
+      document.querySelector(".househand .handImage").classList.remove("winner");
+    }, 2000);
   }
   if (userHand == "rock" && cpHand == "rock") {
     setDecision("It's a tie!");
+    document.querySelector(".handImage").classList.remove("winner");
   }
   if (userHand == "scissors" && cpHand == "scissors") {
     setDecision("It's a tie!");
+    document.querySelector(".handImage").classList.remove("winner");
   }
   if (userHand == "scissors" && cpHand == "rock") {
     setDecision("YOU LOSE!");
+    document.querySelector(".househand .handImage").classList.add("winner");
     setScore(score - 1);
+    setTimeout(() => {
+      document.querySelector(".househand .handImage").classList.remove("winner");
+    }, 2000);
   }
   if (userHand == "scissors" && cpHand == "paper") {
     setDecision("YOU WIN!");
+    document.querySelector(".handImage").classList.add("winner");
     setScore(score + 1);
+    setTimeout(() => {
+      document.querySelector(".userhand .handImage").classList.remove("winner");
+    }, 2000);
+  
   }
 };
+
 
 const setDecision = (decision) => {
     document.querySelector(".decision h1").innerText = decision;
@@ -77,3 +106,6 @@ const restart = () => {
     let main = document.querySelector(".main");
     main.style.display = "flex";
   }
+
+
+

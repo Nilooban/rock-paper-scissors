@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+
   width: 100vw;
   height: 100vh;
   background: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
@@ -104,22 +105,25 @@ body {
 }
 
 .contest img {
-  width: 255px;
-  height: 255px;
+  width: 300px;
+  height: 300px;
 }
 .contest > div {
   flex: 1;
 }
 
 .contest h1 {
+  position: relative;
   color: white;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 50px;
   text-align: center;
+  z-index: 1;
 }
 
 .contest .handImage {
+
   display: flex;
   justify-content: center;
 }
@@ -129,6 +133,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .referee h1 {
@@ -167,4 +172,24 @@ body {
 }
 .attribution a {
   color: hsl(231, 80%, 65%);
+}
+
+
+
+
+.winner {
+ 
+  box-shadow: 0 0 0 40px #2c334c, 0 0 0 70px #232c4b, 0 0 0 100px #1e2949;
+  animation: winner 1s ease forwards;
+  border-radius: 55%;
+  z-index: 1;
+}
+
+@keyframes winner {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
